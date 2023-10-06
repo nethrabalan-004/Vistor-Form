@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <video src="RMK Swachhtha AV - Trim.mp4" class="bgvid" muted loop autoplay></video>
+    <nav class="nav">
+        <div class="nav"><img src="rmkcet-logo.png" alt="" width="200px" height="200px">
+            <div><h1 class="head">RMK College of Engineering and Technology (RMKCET)</h1></div>
+    </div>
+    </nav>
+    <br><br><br>
+    <section class="main">
+        <main class="main2">
+            <div>
+               <p class="head2">VISITORS FORM</p> 
+            </div>
+            <div class="div "><label for="" class="head3">STUDENT NAME :</label><input type="text" name="" id="sname" class="input" required></div>
+
+            <div class="div "><label for="" class="head3">STUDENT ADDRESS :</label><input type="text" name="" id="saddress" class="input" required></div>
+        
+            <div class="div "><label for="" class="head3">STUDENT PHONE NO :</label><input type="number" name="" id="sno" class="input" required></div>
+            
+            <div class="div "><label for="" class="head3">STUDENT EMAIL :</label><input type="email" name="" id="semail" class="input" required></div>
+
+            <div class="div "><label for="" class="head3">STUDENT REG NO :</label><input type="number" name="" id="sregno" class="input" required></div>
+            
+            
+            
+            
+            <div class="div "><label for="" class="head3">COUNSELLOR EMAIL :</label><input type="EMAIL" name="" id="cemail" class="input" required></div>
+
+            
+            <div class="div "><label for="" class="head2">VISITOR 1</label></div>
+
+            <div class="div "><label for="" class="head3"> NAME :</label><input type="text" name="" id="v1name" class="input"></div>
+
+            <div class="div "><label for="" class="head3"> ADDRESS :</label><input type="text" name="" id="v1address" class="input"></div>
+
+            <div class="div "><label for="" class="head3"> PHONE NO :</label><input type="text" name="" id="v1no" class="input"></div>
+
+            <div class="div "><label for="" class="head3">IMAGE  (Share link)  :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="" id="v1img" class="input" required></div>
+
+
+            
+            <div class="div "><h1 class="head2">VISITOR 2 <p style="color: white;font-size: small;">(If not Type NA)</p></h1></div>
+
+            <div class="div "><label for="" class="head3"> NAME :</label><input type="text" name="" id="v2name" class="input"></div>
+
+            <div class="div "><label for="" class="head3"> ADDRESS :</label><input type="text" name="" id="v2address" class="input"></div>
+
+            <div class="div "><label for="" class="head3"> PHONE NO :</label><input type="text" name="" id="v2no" class="input"></div>
+            <div class="div "><label for="" class="head3">IMAGE  (Share link)  :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="" id="v2img" class="input" required></div>
+
+
+           
+           
+            <div class="div "><h1 class="head2">VISITOR 3 <p style="color: white;font-size: small;">(If not Type NA)</p></h1></div>
+
+            <div class="div "><label for="" class="head3"> NAME :</label><input type="text" name="" id="v3name" class="input"></div>
+
+            <div class="div "><label for="" class="head3"> ADDRESS :</label><input type="text" name="" id="v3address" class="input"></div>
+
+            <div class="div "><label for="" class="head3"> PHONE NO :</label><input type="text" name="" id="v3no" class="input"></div>
+            <div class="div "><label for="" class="head3">IMAGE  (Share link)  :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="" id="v3img" class="input" required></div>
+
+
+
+
+            <div class="div "><h1 class="head2">VISITOR 4 <p style="color: white;font-size: small;">(If not Type NA)</p></h1></div>
+
+            <div class="div "><label for="" class="head3"> NAME :</label><input type="text" name="" id="v4name" class="input"></div>
+
+            <div class="div "><label for="" class="head3"> ADDRESS :</label><input type="text" name="" id="v4address" class="input"></div>
+
+            <div class="div "><label for="" class="head3"> PHONE NO :</label><input type="text" name="" id="v4no" class="input"></div>
+            <div class="div "><label for="" class="head3">IMAGE  (Share link)  :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="" id="v4img" class="input" required></div>
+
+            
+
+            <div class="div "><h1 class="head2">VISITOR 5 <p style="color: white;font-size: small;">(If not Type NA)</p></h1></div>
+
+            <div class="div "><label for="" class="head3"> NAME :</label><input type="text" name="" id="v5name" class="input"></div>
+
+            <div class="div "><label for="" class="head3"> ADDRESS :</label><input type="text" name="" id="v5address" class="input"></div>
+
+            <div class="div "><label for="" class="head3"> PHONE NO :</label><input type="text" name="" id="v5no" class="input"></div>
+ 
+            
+            <div class="div "><label for="" class="head3">IMAGE  (Share link)  :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="" id="v5img" class="input" required></div>
+                
+ 
+
+
+<br><br><br><button id="submitd" type="button" class="button" name="submitd">submit</button><br><br>
+        </main>
+        
+    </section>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+        import { getFirestore ,setDoc ,addDoc,doc,collection} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDUnC2OHrJtYpJsp5u88-vQ_dgtuZD_57Q",
+          authDomain: "visitor-base.firebaseapp.com",
+          projectId: "visitor-base",
+          storageBucket: "visitor-base.appspot.com",
+          messagingSenderId: "362244316013",
+          appId: "1:362244316013:web:731d4e31db8ef7982ed864" 
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+      submitd.addEventListener('click',(e) =>  {
+        var sname = document.getElementById("sname").value;
+        var semail = document.getElementById("semail").value;
+        var sno = document.getElementById("sno").value;
+        var sregno = document.getElementById("sregno").value;
+        var saddress = document.getElementById("saddress").value;
+
+
+
+
+         addDoc(collection(db, "vistorbase"), {
+  Student_name: sname,
+  Email: semail,
+  Phone_no: sno,
+  Reg_no:sregno,
+  Address:saddress
+});
+alert("DONE")
+
+
+      }); 
+      </script>
+</body>
+</html>
