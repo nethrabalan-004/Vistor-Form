@@ -1,0 +1,131 @@
+.bgvid
+{
+    position:fixed;
+    min-width: 100%;
+    min-height: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+nav
+{
+    max-width: 100%;
+    left: 0;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.763);
+    position: relative;
+    margin: auto;
+  
+
+}
+.nav
+{
+    width: 1280px;
+    height:300px ;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+   
+}
+.head
+{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: aliceblue;
+    text-shadow: 5px 5px 30px rgb(255, 255, 255);
+}
+.main
+{
+    display: block;
+    margin: auto;
+    width:1240px ;
+    background-color: rgba(0, 0, 0, 0.728);
+    position: relative;
+    height: 3900px;
+    box-shadow: 5px 5px 30px gray;
+}
+.main2
+{
+    width:1170px ;
+    height: 3900px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    align-items: center;
+}
+.head2
+{
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: aliceblue;
+    text-shadow: 5px 5px 30px rgb(255, 255, 255);
+    position: relative;
+    
+}
+.head3
+{
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: aliceblue;
+    text-shadow: 5px 5px 30px rgb(255, 255, 255);
+    position: relative;
+}
+.div
+{
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: ;
+    position: relative;
+    align-items: left;
+    padding-left: 50px ;
+}
+.input
+{
+    width: 700px;
+    height: 35px;
+    color: RED;
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bold;
+   position: relative;
+    position: relative;
+    background-color: rgba(250, 235, 215, 0);
+    border: none;
+    border-bottom: 3px solid white;
+}
+.button
+{
+    width: 300px;
+    height: 60px;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+    text-shadow: 5px 5px 30px white;
+    border: 4px solid white;
+    border-radius: 20px;
+
+}
+.button:hover
+{
+    background-color:white;
+    color: black;
+}
+.p{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    
+    color: aliceblue;
+    text-shadow: 5px 5px 30px rgb(255, 255, 255);
+
+
+}
